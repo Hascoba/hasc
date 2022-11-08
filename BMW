@@ -1,0 +1,35 @@
+<fieldset> <legend>Checkboxes</legend> <p> <label> <input type="checkbox" name="chbox" value="regular" /> Regular </label> </p> <p> <label> <input type="checkbox" name="chbox" value="disabled" disabled /> disabled </label> </p> </fieldset> <fieldset> <legend>Radio buttons</legend> <p> <label> <input type="radio" name="radio" value="regular" /> Regular </label> </p> <p> <label> <input type="radio" name="radio" value="disabled" disabled /> disabled </label> </p> </fieldset> <p> <label >Select an option: <select> <optgroup label="Group 1"> <option>Option 1.1</option> </optgroup> <optgroup label="Group 2"> <option>Option 2.1</option> <option disabled>Option 2.2</option> <option>Option 2.3</option> </optgroup> <optgroup label="Group 3" disabled> <option>Disabled 3.1</option> <option>Disabled 3.2</option> <option>Disabled 3.3</option> </optgroup> </select> </label> </p> <fieldset disabled> <legend>Disabled fieldset</legend> <p> <label> Name: <input type="name" name="radio" value="regular" /> Regular </label> </p> <p> <label>Number: <input type="number" /></label> </p> </fieldset> Copy to Clipboard
+<label for="fruit">Enter a fruit name that is at least 5 letterslong</label> <input type="text" minlength="5" id="fruit" /> Copy to Clipboard
+form action="/action_page.php"> Username: <input type="text" name="usrname" maxlength="10"><br>
+  <input type="submit" value="Submit">
+</form>
+<p>
+<label for="site-search">Search the site:</label>
+<input type="search" id="site-search" name="q">
+
+<button>Search</button>
+</p>
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.
+</p> 
+ <label for="story">Tell us your story:</label>
+
+<textarea id="story" name="story"
+          rows="5" cols="33">
+It was a dark and stormy night...
+</textarea>
+<p>
+var x = document.createElement("INPUT");
+x.setAttribute("type", "number");
+</p>
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+<
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
